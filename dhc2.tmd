@@ -53,7 +53,7 @@
             >
 
             // Rigidbodies
-
+			// mass: 2249.4 ( 0.286 0.000 0.058 )
             <[rigidbody][Fuselage][]
                 <[float64][Mass][1247.3]>
                 <[tmvector3d][InertiaLength][7.661 1.3788 1.7996]>
@@ -2368,36 +2368,7 @@
                 <[string8][SoundFile][wind.wav]>
                 <[bool][External][false]>
             >
-
-            // slip and angle of attack
-            <[soundinput][SideSlip][]
-                <[uint32][InputID][SideSlip.Output]>
-            >
-            <[soundmapping][SideSlipIntensity][]
-                <[string8][Input][SideSlip.Output]>
-                <[tmvector2d][Map][ (0.0 0.0 ) (3.0 0.25) (10.0 1.0) ]>
-            >
-            <[soundmapping][AirspeedVolume][]
-                <[string8][Input][Airspeed.Output]>
-                <[tmvector2d][Map][ (5.0 0.0) (15.0 1.0) (30.0 1.5) (200.0 2.0) ]>
-            >
-            <[soundmultiply][SideSlipVolume][]
-                <[string8][Input0][SideSlipIntensity.Output]>
-                <[string8][Input1][AirspeedVolume.Output]>
-            >
-            <[soundmapping][SideSlipPitch][]
-                <[string8][Input][Airspeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.6) ( 33.33 1.0 ) (200.0 2.0) ]>
-            >
-            <[soundloop][SideSlipLoop][]
-                <[string8][InputVolume][SideSlipVolume.Output]>
-                <[string8][InputPitch][SideSlipPitch.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][sideslip.wav]>
-                <[bool][External][false]>
-            >
-			
+		
             // stall warning		
             <[soundinput][AngleOfAttack][]
                 <[uint32][InputID][AngleOfAttack.Output]>
@@ -2421,33 +2392,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][stall.wav]>
                 <[bool][External][false]>
-            >
-			
-            // prop wash
-            <[soundmapping][RPMPitchWind][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (41.88 0.6) (230.36 2.0) (460.0 3.0) ]>
-            >
-            <[soundmapping][RPMVolumeWind][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (100.0 1.00) (125.79 1.5) (366.88 3.0) ]>
-            >
-            <[soundloop][RPMWindLoopInt][]
-                <[string8][InputVolume][RPMVolumeWind.Output]>
-                <[string8][InputPitch][RPMPitchWind.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][prop1_inn.wav]>
-                <[bool][External][false]>
-            >
-            <[soundloop][RPMWindLoopExt][]
-                <[string8][InputVolume][RPMVolumeWind.Output]>
-                <[string8][InputPitch][RPMPitchWind.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][prop1_out.wav]>
-                <[bool][Internal][false]>
-            >			
+            >		
 
             // starter cranking
             <[soundinput][IgnitionSoundInput][]
