@@ -3,7 +3,8 @@
         <[int][Version][210]>
         <[vec32array][ContactSpheres][ (3.521 1.434 -2.414 0.1592) (-0.2164 1.434 -2.335 0.1592) (-0.2164 -1.434 -2.335 0.2388) (-0.2164 1.434 -2.335 0.2388) ]>
         <[string8][DisplayName][DHC-2 Beaver]>
-        <[string8][DescriptionTextEN][The de Havilland Canada DHC-2 Beaver is a single-engined, high-wing, propeller-driven, STOL aircraft developed by de Havilland Canada, primarily known as a bush plane. It is used for cargo and passenger hauling, aerial application (crop dusting and aerial topdressing), and has been widely adopted by armed forces as a utility aircraft.#Converted from FlightGear by krzysk(at)wp.pl . 3D model by Syd Adams, Tom Haigh (bumpmap).]>
+        <[string8][DescriptionTextEN][The de Havilland Canada DHC-2 Beaver is a single-engined, high-wing, propeller-driven, STOL aircraft developed by de Havilland Canada, primarily known as a bush plane. It is used for cargo and passenger hauling, aerial application (crop dusting and aerial topdressing), and has been widely adopted by armed forces as a utility aircraft.
+		Converted from FlightGear by Krzysztof Kaniewski. 3D model by Syd Adams, Tom Haigh (bumpmap).]>
 		<[float64][WingSpan][14.8]>
 		<[float64][Mass][1292.7]>
 		<[float64][MaximumSpeed][83.5]>
