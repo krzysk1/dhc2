@@ -7,7 +7,7 @@ This is free add-on for Aerofly FS2 developed by Krzysztof Kaniewski, 2019 ver. 
  Some features may not work as intended and this aircraft could crash your Aerofly FS2. 
  Use it at your own risk!
 
-Installation:
+#Installation:
 
 1. Unzip file and move the folder "dhc2" to C:\Users\~\Documents\Aerofly FS2\aircraft.
 
