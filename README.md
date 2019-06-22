@@ -15,3 +15,5 @@ Installation:
 Useful tips:
 
 More liveries and other resources are available here: https://github.com/FGMEMBERS/dhc2
+
+Aircraft Technical Data & Specifications: http://www.airliners.net/aircraft-data/de-havilland-canada-dhc2-beaver/178
