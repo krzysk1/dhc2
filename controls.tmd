@@ -331,26 +331,37 @@
                 <[float64][Length][0.03]>
             >
 			// fuel tank elector
-            <[control_cylinder][FuelTankSelector][1]
+            <[control_input][FuelTankInput][]
+                <[uint32][InputID][FuelSelector.Output]>
+            >
+            <[control_product][FuelTankAngle][2]
+                <[uint32][Inputs][ FuelTankInput.Output 1.570796 ]>
+            >
+            <[control_rotation][FuelTankRotation][2]
+                <[string8][Input][FuelTankAngle.Output]>
+                <[tmvector3d][Axis][-0.999391 0.0 0.034899]>
+                <[tmvector3d][Pivot][1.27 0.521 0.095]>
+            >			
+            <[control_box][FuelTankSelector][1]
                 <[string8][Type][knob]>
-                <[vector3_float64][R0][ 1.27 0.521 0.095 ]>
-                <[matrix3_float64][B0][ 0.0 0.0 1.0 0.0 1.0 0.0  -1.0 0.0 0.0 ]>
-                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[vector3_float64][R0][ 1.255 0.5328 0.09551 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[string8][InputTransform][FuelTankRotation.Output]>				
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.01]>
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.FuelSelector]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][-1.0]>
                 >
-                <[float64][Radius][0.008]>
-                <[float64][Length][0.03]>
+                <[vector3_float64][Dimensions][0.03 0.053 0.015]>
             >
             // engine ignition switch (magneto)
             <[control_input][MagnetosInput][]
                 <[uint32][InputID][Magnetos.Output]>
             >
             <[control_product][MagnetosAngle][2]
-                <[uint32][Inputs][ MagnetosInput.Output 0.53 ]>
+                <[uint32][Inputs][ MagnetosInput.Output 0.471239 ]>
             >
             <[control_rotation][MagnetosRotation][2]
                 <[string8][Input][MagnetosAngle.Output]>
@@ -359,7 +370,7 @@
             >
             <[control_cylinder][Magnetos][65]
                 <[string8][Type][knob]>
-                <[vector3_float64][R0][1.270454 0.421 0.123992]>
+                <[vector3_float64][R0][1.260 0.421 0.123992]>
                 <[matrix3_float64][B0][ 0.0 0.7071 -0.7071  -1.0 0.0 0.0  0.0 0.7071 0.7071 ]>
                 <[string8][InputTransform][MagnetosRotation.Output]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
@@ -426,21 +437,21 @@
                 <[vector3_float64][Dimensions][0.06 0.01 0.02]>
             >	
 			
-			// Floats
+			// Floats variant only
 
-            <[control_box][DimSwitch][25]
-                <[string8][Type][switch toggle]>
-                <[vector3_float64][R0][ 1.266 0.2111 0.126 ]>
-                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
-                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
-                <[float64][StepDistance][0.02]>
-                <[control_message][OnStep][]
-                    <[string8][Message][Controls.DimToggle]>
-                    <[string8][Qualifiers][step]>
-                    <[float64][Value][-1.0]>
-                >
-                <[vector3_float64][Dimensions][0.01 0.004 0.005]>
-            >			
+            // <[control_box][DimSwitch][25]
+                // <[string8][Type][switch toggle]>
+                // <[vector3_float64][R0][ 1.266 0.2111 0.126 ]>
+                // <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+                // <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                // <[float64][StepDistance][0.02]>
+                // <[control_message][OnStep][]
+                    // <[string8][Message][Controls.DimToggle]>
+                    // <[string8][Qualifiers][step]>
+                    // <[float64][Value][-1.0]>
+                // >
+                // <[vector3_float64][Dimensions][0.01 0.004 0.005]>
+            // >			
             <[control_box][GearSwitch][25]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 1.263 0.1618 0.107 ]>

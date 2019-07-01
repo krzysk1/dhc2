@@ -1272,70 +1272,6 @@
             // external lighting end
 
             // gear start
-
-            <[input_binary][GearInput][]
-                <[string8][Input][Controls.Gear]>
-                <[float64][Value][1.0]>
-            >
-            <[sender][SenderGearInput][]
-                <[string8][Input][GearInput.Output]>
-                <[string8][Message][Controls.Gear]>
-            >
-             <[sender][SenderGearPosition][]
-                <[string8][Input][ServoGearSequence.Output]>
-                <[string8][Message][Aircraft.Gear]>
-            >
-            <[servolinear][ServoGearSequence][]
-                <[string8][Input][GearInput.Output]>
-                <[float64][OutputSpeed][2.0]>
-                <[float64][Position][1.0]>
-                <[float64array][InputPosition][ 0.0 1.0 ]>
-                <[float64array][OutputPosition][ 0.0 1.0 ]>
-            >
-            <[output_free][ServoGearSequenceOutput][]
-                <[string8][Input][ServoGearSequence.Output]>
-            >
-            <[servolinear][ServoGear][]
-                <[string8][Input][ServoGearSequence.Output]>
-                <[float64][OutputSpeed][0.25]>
-                <[float64][Position][1.0]>
-                <[float64array][InputPosition][ 0.0 1.0 ]>
-                <[float64array][OutputPosition][ 0.0 1.0 ]>
-            >
-            <[output_free][ServoGearOutput][]
-                <[string8][Input][ServoGear.Output]>
-            >
-			// water rudder	
-            <[servolinear][ServoWater][]
-                <[string8][Input][ServoGearSequence.Output]>
-                <[float64][OutputSpeed][1.0]>
-                <[float64][Position][0.0]>
-                <[float64array][InputPosition][ 0.0 0.1 ]>
-                <[float64array][OutputPosition][ 1.0 0.0 ]>
-            >
-            <[servolinear][WaterRudderSpeed][]
-                <[string8][Input][AirspeedIndicator.IndicatedAirspeed]>
-                <[float64][OutputSpeed][0.4]>
-                <[float64][Position][0.0]>
-                <[float64array][InputPosition][ 10.0 11.0 ]>
-                <[float64array][OutputPosition][ 1.0 0.0 ]>
-            >
-            <[product][ServoWaterRudder][]
-                <[string8][Inputs][WaterRudderSpeed.Output ServoWater.Output]>
-            >
-            <[output_free][ServoWaterRudderOutput][]
-                <[string8][Input][ServoWaterRudder.Output]>
-            >
-            <[servolinear][ServoSteering][]
-                <[string8][Input][RudderInput.Output]>
-                <[float64][OutputSpeed][5.0]>
-                <[float64][Position][0.0]>
-                <[float64array][InputPosition][ -1.0 1.0 ]>
-                <[float64array][OutputPosition][ -0.436332 0.436332 ]>
-            >
-            <[output_free][ServoSteeringOutput][]
-                <[string8][Input][ServoSteering.Output]>
-            >
 			
             // wheelbrake
             <[input_default][BrakeInput][]
@@ -1412,6 +1348,71 @@
             <[polynomial][RightBrake][]
                 <[string8][Input][RightBrakePedal.Output]>
                 <[float64array][Coefficients][ 0.5 0.5 0.0 ]>
+            >
+			
+			//  gear retract (float variant)
+            <[input_binary][GearInput][]
+                <[string8][Input][Controls.Gear]>
+                <[float64][Value][1.0]>
+            >
+            <[sender][SenderGearInput][]
+                <[string8][Input][GearInput.Output]>
+                <[string8][Message][Controls.Gear]>
+            >
+             <[sender][SenderGearPosition][]11
+                <[string8][Input][ServoGearSequence.Output]>
+                <[string8][Message][Aircraft.Gear]>
+            >
+            <[servolinear][ServoGearSequence][]
+                <[string8][Input][GearInput.Output]>
+                <[float64][OutputSpeed][2.0]>
+                <[float64][Position][1.0]>
+                <[float64array][InputPosition][ 0.0 1.0 ]>
+                <[float64array][OutputPosition][ 0.0 1.0 ]>
+            >
+            <[output_free][ServoGearSequenceOutput][]
+                <[string8][Input][ServoGearSequence.Output]>
+            >
+            <[servolinear][ServoGear][]
+                <[string8][Input][ServoGearSequence.Output]>
+                <[float64][OutputSpeed][0.25]>
+                <[float64][Position][1.0]>
+                <[float64array][InputPosition][ 0.0 1.0 ]>
+                <[float64array][OutputPosition][ 0.0 1.0 ]>
+            >
+            <[output_free][ServoGearOutput][]
+                <[string8][Input][ServoGear.Output]>
+            >
+			// water rudder	(float variant)
+            <[servolinear][ServoWater][]
+                <[string8][Input][ServoGearSequence.Output]>
+                <[float64][OutputSpeed][1.0]>
+                <[float64][Position][0.0]>
+                <[float64array][InputPosition][ 0.0 0.1 ]>
+                <[float64array][OutputPosition][ 1.0 0.0 ]>
+            >
+            <[servolinear][WaterRudderSpeed][]
+                <[string8][Input][AirspeedIndicator.IndicatedAirspeed]>
+                <[float64][OutputSpeed][0.4]>
+                <[float64][Position][0.0]>
+                <[float64array][InputPosition][ 10.0 11.0 ]>
+                <[float64array][OutputPosition][ 1.0 0.0 ]>
+            >
+            <[product][ServoWaterRudder][]
+                <[string8][Inputs][WaterRudderSpeed.Output ServoWater.Output]>
+            >
+            <[output_free][ServoWaterRudderOutput][]
+                <[string8][Input][ServoWaterRudder.Output]>
+            >
+            <[servolinear][ServoSteering][]
+                <[string8][Input][RudderInput.Output]>
+                <[float64][OutputSpeed][5.0]>
+                <[float64][Position][0.0]>
+                <[float64array][InputPosition][ -1.0 1.0 ]>
+                <[float64array][OutputPosition][ -0.436332 0.436332 ]>
+            >
+            <[output_free][ServoSteeringOutput][]
+                <[string8][Input][ServoSteering.Output]>
             >
 
             // gear end
@@ -1666,11 +1667,9 @@
             <[output_free][FuelSelectorOutput][]
                 <[string8][Input][FuelSelector.Output]>
             >
-            <[event_sound][FuelSelectorSound][]
-            >
             <[event_edge][FuelSelector_Sound0][]
                 <[string8][Input][FuelSelector.Output]>
-                <[string8][Events][ FuelSelectorSound.Trigger ]>
+                <[string8][Events][ SwitchSound.Trigger ]>
                 <[bool][Rising][true]>
                 <[bool][Falling][true]>
                 <[float64][Value][0.0]>
@@ -1678,7 +1677,7 @@
             >
             <[event_edge][FuelSelector_Sound1][]
                 <[string8][Input][FuelSelector.Output]>
-                <[string8][Events][ FuelSelectorSound.Trigger ]>
+                <[string8][Events][ SwitchSound.Trigger ]>
                 <[bool][Rising][true]>
                 <[bool][Falling][true]>
                 <[float64][Value][0.0]>
@@ -2547,7 +2546,6 @@
             >
             <[graphics_input][MagnetosInput][]
                 <[uint32][InputID][Magnetos.Output]>
-                <[float64][Scaling][3.0]>
             >
             <[graphics_mapping][MagnetosMapping][]
                 <[string8][Input][MagnetosInput.Output]>
