@@ -1190,6 +1190,9 @@
                 <[float64][Radius][0.08]>
                 <[float64][Limit][0.01]>
             >
+            <[output][BalanceIndicatorDeflection][]
+                <[string8][Input][BalanceIndicator.Output]>
+            >			
             <[output][RateOfTurn][]
                 <[string8][Input][TurnCoordinator.RateOfTurn]>
             >
