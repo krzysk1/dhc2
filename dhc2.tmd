@@ -1893,7 +1893,7 @@
                 <[tmvector3d][Color][ 1.0 0.4 0.0 1.0 ]>
                 <[string8][InputModulation][BeaconSwitched.Output]>
                 <[float64][Size][0.03]>
-                <[float64][Brightness][5.0]>
+                <[float64][Brightness][7.0]>
             >
             // navigation lights
             <[graphics_input][NavigationLightOn][]
@@ -1905,7 +1905,7 @@
                 <[tmvector3d][R0][0.2986 7.161 1.206]>
                 <[tmvector3d][X0][ 0.7 0.7 0.0 ]>
                 <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
-                <[float64][Brightness][ 2.0 ]>
+                <[float64][Brightness][ 3.0 ]>
                 <[string8][InputModulation][NavigationLightOn.Output]>
             >
             <[graphics_pointlight][RightWingTipLightGreen][]
@@ -1914,7 +1914,7 @@
                 <[tmvector3d][R0][0.2986 -7.161 1.206]>
                 <[tmvector3d][X0][ 0.7 -0.7 0.0 ]>
                 <[tmvector3d][Color][ 0.2 0.7 0.1 1.0 ]>
-                <[float64][Brightness][ 2.0 ]>
+                <[float64][Brightness][ 3.0 ]>
                 <[string8][InputModulation][NavigationLightOn.Output]>
             >
             // landing lights
