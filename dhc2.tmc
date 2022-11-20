@@ -1,5 +1,5 @@
 <[file][][]    <[object][][]
-        <[int][Version][220]>        <[vec32array][ContactSpheres][ (3.521 1.434 -2.414 0.159) (-0.216 1.434 -2.335 0.159) (-0.216 -1.434 -2.335 0.239) (-0.216 1.434 -2.335 0.239) ]>
+        <[int][Version][220]>        <[vec32array][ContactSpheres][ (1.0 -1.45 -1.579 0.381) (1.0 1.45 -1.579 0.38) (-5.796 0.0 -0.556 0.162) ]>
         <[string8][ICAO][DHC2]>        <[string8][DisplayName][DHC-2 Beaver]>
         <[string8][DisplayNameFull][DHC-2 Beaver]>
         <[localized_text_list][Descriptions][]            <[localized_text][][]                <[string8][Language][en]>                <[string8][Text][The de Havilland Canada DHC-2 Beaver is a single-engined, high-wing, propeller-driven, STOL aircraft developed by de Havilland Canada, primarily known as a bush plane. It is used for cargo and passenger hauling, aerial application (crop dusting and aerial topdressing), and has been widely adopted by armed forces as a utility aircraft. Converted from FlightGear by Krzysztof Kaniewski. Original 3D model by Syd Adams & Tom Haigh.]>            >
@@ -17,10 +17,9 @@
         <[float64][EnginePower][335564.6]>
         <[float64][MaximumRange][732000.0]>
         <[uint][UnitsBuilt][1657]>
-        <[uint][EngineCount][0]>        <[uint][Year][1947]>
+        <[uint][EngineCount][1]>        <[uint][Year][1947]>
         <[tmvector2d][FlapSettings][ (0.0 0.0) (0.25 0.26180) (0.5 0.61087) (0.75 0.87266) (1.0 1.01229) ]>
-        <[string8][FlapQualifier][]>		
-		<[bool][FloatPlane][true]>
-        <[string8][Tags][ airplane utility general_aviation flaps piston retractable_gear ]>        <[string8][Pilot][]>
+        <[string8][FlapQualifier][]>
+        <[string8][Tags][ airplane utility general_aviation flaps piston tailgear ]>        <[string8][Pilot][]>
     >
 >
