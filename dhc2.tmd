@@ -109,8 +109,6 @@
                 <[string8][Geometry][Fuselage]>
                 <[float64][StaticFrictionCoefficient][1.0]>
                 <[float64][KineticFrictionCoefficient][0.65]>
-                <[bool][Blade][false]>
-                <[bool][CrashOnContact][false]>
             >
             <[collisionhull][CollisionLeftWing][]
                 <[float64][K][4879000]>
@@ -119,8 +117,6 @@
                 <[string8][Geometry][WingL]>
                 <[float64][StaticFrictionCoefficient][1.0]>
                 <[float64][KineticFrictionCoefficient][0.65]>
-                <[bool][Blade][false]>
-                <[bool][CrashOnContact][false]>
             >
             <[collisionhull][CollisionRightWing][]
                 <[float64][K][4879000]>
@@ -129,8 +125,7 @@
                 <[string8][Geometry][WingR]>
                 <[float64][StaticFrictionCoefficient][1.0]>
                 <[float64][KineticFrictionCoefficient][0.65]>
-                <[bool][Blade][false]>
-                <[bool][CrashOnContact][false]>
+                <[bool][InstantCrash][true]>
             >
             <[rigidbody][EngineBody][]
                 <[float64][Mass][301.6]>

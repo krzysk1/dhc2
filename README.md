@@ -8,11 +8,15 @@ Thanks to them.
  Some features may not work as intended and this aircraft could crash your Aerofly FS4. 
  Use it at your own risk!
 
-Installation:
+# Installation
 
-1. Unzip file and move the folder "dhc2" to C:\Users\~\Documents\Aerofly FS4\aircraft.
+1. Unzip file and move the folder "dhc2" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
 
-Useful tips:
+# Uninstall
+
+1. Delete the folder "dhc2".
+
+# Resources
 
 More liveries and other resources are available here: https://github.com/FGMEMBERS/dhc2
 

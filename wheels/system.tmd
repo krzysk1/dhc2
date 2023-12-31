@@ -27,7 +27,6 @@
                 <[float64][D][20.0]>
                 <[float64][StaticFrictionCoefficient][1.0]>
                 <[float64][KineticFrictionCoefficient][0.4]>
-                <[bool][Blade][false]>
             >
             <[wheel][LeftWheelHull][]
                 <[string8][Body][LeftGear]>
@@ -75,7 +74,6 @@
                 <[float64][D][20.0]>
                 <[float64][StaticFrictionCoefficient][1.0]>
                 <[float64][KineticFrictionCoefficient][0.4]>
-                <[bool][Blade][false]>
             >
             <[wheel][RightWheelHull][]
                 <[string8][Body][RightGear]>
@@ -151,7 +149,6 @@
                 <[float64][D][200.0]>
                 <[float64][StaticFrictionCoefficient][1.5]>
                 <[float64][KineticFrictionCoefficient][0.9]>
-                <[bool][Blade][false]>
             >
             <[wheel][TailWheelHull][]
                 <[string8][Body][TailGear]>
