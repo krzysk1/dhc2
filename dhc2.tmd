@@ -4098,7 +4098,7 @@
                      <[tmvector3d][X0][ 7.8993 -0.8219 0.2263 ]>
                      <[tmvector3d][Y0][ -0.9824 -10.3660 -3.3567 ]>
                      <[tmvector3d][Z0][ 0.6425 3.3093 -10.4077 ]>
-                     <[string8][InputTransform][LeftHandTransform.Output]>
+            //         <[string8][InputTransform][LeftHandTransform.Output]>
                  >
                  <[bone][element][68]
                      <[string8][Name][Bip01 L Finger0]>
@@ -4292,7 +4292,7 @@
                      <[tmvector3d][X0][ 7.9174 0.3009 0.5914 ]>
                      <[tmvector3d][Y0][ 0.8951 -2.8868 -10.5143 ]>
                      <[tmvector3d][Z0][ -0.1833 10.5442 -2.9106 ]>
-                     <[string8][InputTransform][ThrottleTransform.Output]>
+            //         <[string8][InputTransform][ThrottleTransform.Output]>
                  >
                  <[bone][element][92]
                      <[string8][Name][Bip01 R Finger0]>
@@ -4478,7 +4478,7 @@
                      <[tmvector3d][X0][ 8.4236 -0.6271 -5.6501 ]>
                      <[tmvector3d][Y0][ 10.1485 0.6046 15.0629 ]>
                      <[tmvector3d][Z0][ -0.2741 -8.3744 0.5208 ]>
-                     <[string8][InputTransform][LeftFootTransform.Output]>
+          //           <[string8][InputTransform][LeftFootTransform.Output]>
                  >
                  <[bone][element][115]
                      <[string8][Name][Bip01 L Toe0]>
@@ -4520,7 +4520,7 @@
                      <[tmvector3d][X0][ 8.3109 0.3991 -5.8347 ]>
                      <[tmvector3d][Y0][ 10.4408 0.0348 14.8741 ]>
                      <[tmvector3d][Z0][ 0.2791 -8.3885 -0.1763 ]>
-                     <[string8][InputTransform][RightFootTransform.Output]>
+             //        <[string8][InputTransform][RightFootTransform.Output]>
                  >
                  <[bone][element][120]
                      <[string8][Name][Bip01 R Toe0]>
