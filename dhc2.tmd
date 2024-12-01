@@ -2150,19 +2150,19 @@
             >
             <[graphics_input][vsiGauge_VSIneedleInput][]
                 <[uint32][InputID][VerticalSpeedIndicatorNeedle.Output]>
-                <[float64][Scaling][196.848]>
+                <[float64][Scaling][1.96848]>
             >
             <[graphics_linear_interpolation][vsiGauge_VSIneedleMapping][]
                 <[string8][Input][vsiGauge_VSIneedleInput.Output]>
-                <[tmvector2d][Map][(-2000.0 -3.019420)
-								(-1500.0 -2.199115)
-								(-1000.0 -1.466077)
-								(-500.0 -0.724312)
+                <[tmvector2d][Map][(-20.0 -3.019420)
+								(-15.0 -2.199115)
+								(-10.0 -1.466077)
+								(-5.0 -0.724312)
 								(0.0 0.0)
-								(500.0 0.724312)
-								(1000.0 1.466077)
-								(1500.0 2.199115)
-								(2000.0 3.019420)]>
+								(5.0 0.724312)
+								(10.0 1.466077)
+								(15.0 2.199115)
+								(20.0 3.019420)]>
             >
             <[hingedbodygraphics][vsiGauge_VSIneedle][]
                 <[string8][GeometryList][ VSINeedle ]>
