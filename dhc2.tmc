@@ -21,9 +21,10 @@
         >
         <[float64][MaximumTakeoffMass][2313]>
 		<[float64][WingSpan]          [14.8]>
+        <[uint32] [Year]              [1947]>
         <[uint32] [UnitsBuilt]        [1657]>
         <[uint32] [EngineCount]       [1]>
-        <[uint32] [Year]              [1947]>
+        <[float64][EnginePower]       [335564.6]>
 		<[float64][MaximumAirspeed]   [83.5]>
 		<[float64][MaximumSpeed]      [83.5]>
 		<[float64][MinimumAirspeed]   [19.5]>
@@ -32,7 +33,6 @@
         <[float64][CruiseSpeed]       [91.5]>
         <[float64][MaximumAltitude]   [5486.0]>
         <[float64][CruiseAltitude]    [5000.0]>
-        <[float64][EnginePower]       [335564.6]>
         <[float64][MaximumRange]      [732000.0]>
 		<[vector2_float64][NormalAirspeedRange] [ 19.5 71.5 ]>
 		<[vector2_float64][CautionAirspeedRange][ 71.5 83.5 ]>
