@@ -15,6 +15,18 @@
                 <[string8][Text][Der de Havilland Canada DHC-2 Beaver ist ein einmotoriges, hochdecker, propellergetriebenes STOL-Flugzeug, das von de Havilland Canada entwickelt wurde und hauptsächlich als Buschflugzeug bekannt ist. Es wird für den Fracht- und Passagiertransport, die Luftanwendung (Pflanzenschutzmittelversprühen und Luftdüngung) verwendet und wurde von den Streitkräften weit verbreitet als Nutzflugzeug übernommen. Konvertiert von FlightGear durch Krzysztof Kaniewski. Ursprüngliches 3D-Modell von Syd Adams & Tom Haigh.]>
             >
             <[localized_text][element][2]
+                <[string8u][Language][fr]>
+                <[string8][Text][Le de Havilland Canada DHC-2 Beaver est un avion monomoteur à ailes hautes et à hélice, développé par de Havilland Canada, principalement connu comme avion de brousse. Il est utilisé pour le transport de marchandises et de passagers, l'épandage aérien (pulvérisation des cultures et épandage aérien) et a été largement adopté par les forces armées comme avion utilitaire. Converti à partir de FlightGear par Krzysztof Kaniewski. Modèle 3D original par Syd Adams et Tom Haigh.]>
+			>
+            <[localized_text][element][3]
+                <[string8u][Language][es]>
+                <[string8][Text][El De Havilland Canada DHC-2 Beaver es un avión monomotor, de ala alta, propulsado por hélice y STOL desarrollado por De Havilland Canada, conocido principalmente como avión de selva. Se utiliza para el transporte de carga y pasajeros, aplicaciones aéreas (fumigación de cultivos y abonado aéreo) y ha sido ampliamente adoptado por las fuerzas armadas como avión utilitario. Convertido desde FlightGear por Krzysztof Kaniewski. Modelo 3D original de Syd Adams y Tom Haigh.]>
+			>
+            <[localized_text][element][4]
+                <[string8u][Language][it]>
+                <[string8][Text][Il de Havilland Canada DHC-2 Beaver è un velivolo monomotore, ad ala alta, con propulsione a elica e capacità STOL sviluppato dalla de Havilland Canada, noto principalmente come aereo da bush. Viene utilizzato per il trasporto di merci e passeggeri, per applicazioni aeree (irrorazione dei campi e concimazione aerea) ed è stato ampiamente adottato dalle forze armate come velivolo da lavoro. Convertito da FlightGear da Krzysztof Kaniewski. Modello 3D originale di Syd Adams e Tom Haigh.]>
+			>
+            <[localized_text][element][5]
                 <[string8u][Language][pl]>
                 <[string8][Text][de Havilland Canada DHC-2 Beaver to jednosilnikowy, wysokopłatowy, napędzany śmigłem samolot STOL opracowany przez de Havilland Canada, znany głównie jako samolot buszowy. Jest używany do przewozu ładunków i pasażerów, aplikacji lotniczych (opylanie upraw i topdressing z powietrza) i został szeroko przyjęty przez siły zbrojne jako samolot użytkowy. Przekonwertowany z FlightGear przez Krzysztofa Kaniewskiego. Oryginalny model 3D autorstwa Syda Adamsa i Toma Haigha.]>
 			>

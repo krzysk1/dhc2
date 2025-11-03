@@ -22,7 +22,7 @@
                 <[tmvector3d][Pivot][1.102 0.351 0.194]>
                 <[string8][InputTransform][ElevatorTransform.Output]>
             >
-            <[control_cylinder][LeftYokeLeftGrip][3]
+            <[control_cylinder][LeftYokeLeftGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][1.08 0.547 0.214]>  
                 <[matrix3_float64][B0][ 0.173648 -0.137059 0.976824 0.0 0.990268 0.139173 -0.984808 -0.024167 0.171958 ]>
@@ -43,7 +43,7 @@
                 <[float64][Radius][0.023]>
                 <[float64][Length][0.11]>
             >
-            <[control_cylinder][LeftYokeRightGrip][3]
+            <[control_cylinder][LeftYokeRightGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][1.08 0.1579 0.214]>
                 <[matrix3_float64][B0][ 0.173648 0.137059 0.976824 0.0 0.990268 -0.139173 -0.984808 0.024167 0.171958 ]>
@@ -71,7 +71,7 @@
                 <[tmvector3d][Pivot][1.141 -0.327 0.195]>
                 <[string8][InputTransform][ElevatorTransform.Output]>
             >
-            <[control_cylinder][RightYokeLeftGrip][3]
+            <[control_cylinder][RightYokeLeftGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][1.08 -0.1356 0.214]>
                 <[matrix3_float64][B0][ 0.173648 -0.137059 0.976824 0.0 0.990268 0.139173 -0.984808 -0.024167 0.171958 ]>
@@ -92,7 +92,7 @@
                 <[float64][Radius][0.023]>
                 <[float64][Length][0.11]>
             >
-            <[control_cylinder][RightYokeRighttGrip][3]
+            <[control_cylinder][RightYokeRighttGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][1.08 -0.5225 0.214]>
                 <[matrix3_float64][B0][ 0.173648 0.137059 0.976824 0.0 0.990268 -0.139173 -0.984808 0.024167 0.171958 ]>
@@ -140,14 +140,14 @@
 			// mixture lever
             <[control_input][MixtureLeverInput][]
                 <[uint32][InputID][ServoMixture.Output]>
-                <[float64][Scaling][1.221730]>				
+                <[float64][Scaling][1.221730]>
             >
             <[control_rotation][MixtureLeverTransform][]
                 <[string8][Input][MixtureLeverInput.Output]>
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
                 <[tmvector3d][Pivot][1.342 -0.003 0.405]>
-            >			
-            <[control_sphere][MixtureLever][2]
+            >
+            <[control_sphere][MixtureLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ 1.211 -0.06 0.4197 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -164,14 +164,14 @@
  			// propeller speed
             <[control_input][PropellerSpeedLeverInput][]
                 <[uint32][InputID][ServoPropRPM.Output]>
-                <[float64][Scaling][1.221730]>				
+                <[float64][Scaling][1.221730]>
             >
             <[control_rotation][PropellerSpeedLeverTransform][]
                 <[string8][Input][PropellerSpeedLeverInput.Output]>
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
                 <[tmvector3d][Pivot][1.342 -0.003 0.405]>
-            >			
-            <[control_sphere][PropellerSpeedLever][2]
+            >
+            <[control_sphere][PropellerSpeedLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ 1.211 -0.0007 0.4181 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -186,7 +186,7 @@
                 <[float64][Radius][0.0195]>
             >
 			// pressure setting
-            <[control_cylinder][PressureSetting][2]
+            <[control_cylinder][PressureSetting][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][ 1.267 0.221 0.3426 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -201,7 +201,7 @@
                 <[float64][Length][0.011]>
             >
 			// attitude indicator adjust
-            <[control_cylinder][AttitudeIndicatorAdjust][22]
+            <[control_cylinder][AttitudeIndicatorAdjust][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][ 1.266 0.295 0.3379 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -215,10 +215,10 @@
                 <[float64][Radius][0.007]>
                 <[float64][Length][0.013]>
             >
-			
-            // switches	
-			
-            <[control_cylinder][BatterySwitch][1]
+
+            // switches
+
+            <[control_cylinder][BatterySwitch][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 1.254 0.414 0.0309 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -232,7 +232,7 @@
                 <[float64][Radius][0.008]>
                 <[float64][Length][0.03]>
             >
-            <[control_cylinder][StarterSwitch][1]
+            <[control_cylinder][StarterSwitch][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 1.267 0.3744 0.036 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -245,8 +245,8 @@
                 >
                 <[float64][Radius][0.008]>
                 <[float64][Length][0.03]>
-            >				
-            <[control_cylinder][GeneratorSwitch][1]
+            >
+            <[control_cylinder][GeneratorSwitch][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 1.254 0.3344 0.0309 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -260,7 +260,7 @@
                 <[float64][Radius][0.008]>
                 <[float64][Length][0.03]>
             >
-            <[control_cylinder][FuelPumpSwitch][1]
+            <[control_cylinder][FuelPumpSwitch][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 1.254 0.2944 0.0309 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -274,7 +274,7 @@
                 <[float64][Radius][0.008]>
                 <[float64][Length][0.03]>
             >
-            <[control_cylinder][PitotSwitch][1]
+            <[control_cylinder][PitotSwitch][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 1.254 0.2546 0.0309 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -288,7 +288,7 @@
                 <[float64][Radius][0.008]>
                 <[float64][Length][0.03]>
             >
-            <[control_cylinder][InstrumentLightsSwitch][1]
+            <[control_cylinder][InstrumentLightsSwitch][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 1.254 0.2031 0.0309 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -301,8 +301,8 @@
                 >
                 <[float64][Radius][0.008]>
                 <[float64][Length][0.03]>
-            >			
-            <[control_cylinder][LandingLightsSwitch][1]
+            >
+            <[control_cylinder][LandingLightsSwitch][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 1.254 0.1633 0.0309 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -316,7 +316,7 @@
                 <[float64][Radius][0.008]>
                 <[float64][Length][0.03]>
             >
-            <[control_cylinder][NavLightsSwitch][1]
+            <[control_cylinder][NavLightsSwitch][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 1.254 0.1231 0.0309]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -334,19 +334,19 @@
             <[control_input][FuelTankInput][]
                 <[uint32][InputID][FuelSelector.Output]>
             >
-            <[control_product][FuelTankAngle][2]
+            <[control_product][FuelTankAngle][]
                 <[uint32][Inputs][ FuelTankInput.Output 1.570796 ]>
             >
-            <[control_rotation][FuelTankRotation][2]
+            <[control_rotation][FuelTankRotation][]
                 <[string8][Input][FuelTankAngle.Output]>
                 <[tmvector3d][Axis][-0.999391 0.0 0.034899]>
                 <[tmvector3d][Pivot][1.27 0.521 0.095]>
-            >			
-            <[control_box][FuelTankSelector][1]
+            >
+            <[control_box][FuelTankSelector][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][ 1.255 0.5328 0.09551 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
-                <[string8][InputTransform][FuelTankRotation.Output]>				
+                <[string8][InputTransform][FuelTankRotation.Output]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.01]>
                 <[control_message][OnStep][]
@@ -360,10 +360,10 @@
             <[control_input][MagnetosInput][]
                 <[uint32][InputID][Magnetos.Output]>
             >
-            <[control_product][MagnetosAngle][2]
+            <[control_product][MagnetosAngle][]
                 <[uint32][Inputs][ MagnetosInput.Output 0.471239 ]>
             >
-            <[control_rotation][MagnetosRotation][2]
+            <[control_rotation][MagnetosRotation][]
                 <[string8][Input][MagnetosAngle.Output]>
                 <[tmvector3d][Axis][-0.999391 0.0 0.034899]>
                 <[tmvector3d][Pivot][1.270454 0.421 0.123992]>
@@ -391,14 +391,14 @@
  			// left door handle
             <[control_input][LeftDoorHandleInput][]
                 <[uint32][InputID][ServoLeftDoor.Output]>
-                <[float64][Scaling][-2.792527]>				
+                <[float64][Scaling][-2.792527]>
             >
             <[control_rotation][LeftDoorHandleTransform][]
                 <[string8][Input][LeftDoorHandleInput.Output]>
                 <[tmvector3d][Axis][0.008694 0.017388 0.999811]>
                 <[tmvector3d][Pivot][1.277 0.605 -0.107]>
-            >			
-            <[control_box][LeftDoorHandle][2]
+            >
+            <[control_box][LeftDoorHandle][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 0.752 0.6 0.1976 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -415,14 +415,14 @@
  			// right door handle
             <[control_input][RightDoorHandleInput][]
                 <[uint32][InputID][ServoRightDoor.Output]>
-                <[float64][Scaling][2.792527]>				
+                <[float64][Scaling][2.792527]>
             >
             <[control_rotation][RightDoorHandleTransform][]
                 <[string8][Input][RightDoorHandleInput.Output]>
                 <[tmvector3d][Axis][0.008694 -0.017388 0.999811]>
                 <[tmvector3d][Pivot][1.277 -0.605 -0.107]>
-            >			
-            <[control_box][RightDoorHandle][2]
+            >
+            <[control_box][RightDoorHandle][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 0.752 -0.6 0.1976 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
@@ -435,11 +435,11 @@
                     <[float64][Value][-1.0]>
                 >
                 <[vector3_float64][Dimensions][0.06 0.01 0.02]>
-            >	
-			
+            >
+
 			// Floats variant only
 
-            // <[control_box][DimSwitch][25]
+            // <[control_box][DimSwitch][]
                 // <[string8][Type][switch toggle]>
                 // <[vector3_float64][R0][ 1.266 0.2111 0.126 ]>
                 // <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
@@ -451,8 +451,8 @@
                     // <[float64][Value][-1.0]>
                 // >
                 // <[vector3_float64][Dimensions][0.01 0.004 0.005]>
-            // >			
-            <[control_box][GearSwitch][25]
+            // >
+            <[control_box][GearSwitch][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 1.263 0.1618 0.107 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
@@ -465,7 +465,7 @@
                 >
                 <[vector3_float64][Dimensions][0.011 0.013 0.02]>
             >
-			
+
         >
     >
 >
